@@ -1,2 +1,16 @@
-# vue-vite-express-template
-This template contains the tools needed to build a modern web app with Vue, Vite, Express.js, and Typescript.
+# Vue + Vite + Express + Typescript Template
+
+This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+
+Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+
+---
+
+This Template helps you get started quickly with a modern TypeScript-based stack featuring:
+
+- React
+- Vite
+- Express.js API server
+- TypeScript across both frontend and backend
+
+---
