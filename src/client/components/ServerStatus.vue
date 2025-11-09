@@ -38,9 +38,9 @@ export default {
     return {
       serverMessage,
       uptime,
-      memoryUsage
+      memoryUsage,
     };
-  }
+  },
 };
 </script>
 
