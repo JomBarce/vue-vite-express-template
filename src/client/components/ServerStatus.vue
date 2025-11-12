@@ -48,7 +48,7 @@ export default {
 .server-status {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
+  color: rgb(255, 255, 255);
   margin: 20px;
 }
 
