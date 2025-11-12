@@ -1,18 +1,22 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
+import Hero from './components/Hero.vue';
+import About from './components/About.vue';
+import Services from './components/Services.vue';
+import Contact from './components/Contact.vue';
 import ServerStatus from './components/ServerStatus.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="./assets/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <nav className="navbar">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <Hero />
+  <About />
+  <Services />
+  <Contact />
   <ServerStatus />
 </template>
 
