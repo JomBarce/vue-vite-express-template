@@ -4,10 +4,27 @@ dotenv.config();
 import { createServer } from 'http';
 import app from './app.ts';
 
-const server = createServer(app);
+// Choose DB based on config
+import { connectMongo } from './db/mongo.ts';
+import { connectMySQL } from './db/mysql.ts';
 
 const PORT = Number(process.env.PORT) || 9001;
 
-server.listen(PORT, () => {
-  console.log(`API started on http://localhost:${PORT}`);
-});
+async function startServer() {
+  if (process.env.USE_MONGO === 'true') {
+    await connectMongo();
+  }
+  
+  if (process.env.USE_MYSQL === 'true') {
+    await connectMySQL();
+  }
+
+  const server = createServer(app);
+
+  server.listen(PORT, () => {
+    console.log(`API started on http://localhost:${PORT}`);
+  });
+
+}
+
+startServer();
